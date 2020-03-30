@@ -1,15 +1,16 @@
 # DynamicDaoByDapper
 利用dapper组件实现mybatis注解编写dao的功能
- [Table("tablename")]
+`
+   [Table("tablename")]
     public interface IDaoWffins
     {
-        //基本增删改
-        [Insert("id,dataid,name,cdate,status")]
-        int Insert(List<WFinsentity> finsentity);
-
         [Insert("dataid,name,cdate,status")]
         int Update(WFinsentity finsentity);
 
+        //基本增删改
+        [Insert("id,dataid,name,cdate,status")]
+        int Insert(List<WFinsentity> finsentity);
+        
         /// <summary>
         /// 其他需要从DI容器获取的对象
         /// </summary>
@@ -27,3 +28,4 @@
             };
         }
     }
+`
