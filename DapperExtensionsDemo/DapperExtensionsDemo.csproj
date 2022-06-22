@@ -10,7 +10,7 @@
     <PackageReference Include="Dapper" Version="2.0.30" />
     <PackageReference Include="Microsoft.CodeAnalysis.CSharp" Version="3.5.0" />
     <PackageReference Include="Mysql.data" Version="8.0.19" />
-    <PackageReference Include="newtonsoft.json" Version="12.0.3" />
+    <PackageReference Include="newtonsoft.json" Version="13.0.1" />
   </ItemGroup>
 
 </Project>
